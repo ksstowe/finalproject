@@ -4,31 +4,27 @@
     box-sizing: border-box;
 }
 body{
-    
-
     font-family: Copse,Verdana, serif;
     text-align: center;
     font-size: 22px;
     color: #314259;
-   
+}
 
-}
-#grid-container{
-    width: 1280px;
-    margin: 50px;
-}
 
 html{
     
     background-color: #c2d9bf;
     background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    display:grid;
+    
 }
 
 main{
+    
     display: grid;
     grid-template-columns: 900px 900px ;
-    grid-template-rows: auto;
+
     grid-template-areas: 
       
       " intro  image  "
@@ -37,12 +33,15 @@ main{
       "  chef   chef  ";
       
   }
+  #grid-container{
+    margin:50px;
+  }
 header{
+    
     border: 6px groove #040926;
     background-color: #314259;
     line-height: 60px;
     text-align: center;
-    
  }
 p{
     text-align: center;    
@@ -253,6 +252,7 @@ footer{
     color: #F25E3D;
     padding-top:5px;
     padding-bottom: 5px;
+    
  }
 footer p{
     margin:20px;
